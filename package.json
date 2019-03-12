@@ -20,6 +20,7 @@
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm run lint && npm run test && npm run clean-dist",
     "build": "babel-node tools/build.js && npm run open:dist",
+    "deploy": "aws s3 sync dist/ s3://oi-website",
     "test": "jest",
     "test:CI": "jest",
     "test:cover": "npm run test -- --coverage ",
