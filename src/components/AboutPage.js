@@ -25,7 +25,11 @@ class  AboutPage extends React.Component {
 
     render(){
         return (
+            <div>
             <img style={{margin: -8, padding:0, width: this.state.width}} src={headerImage} alt="Logo" />
+            <h1 style={{font: 'san'}}>ABOUT US</h1>
+            <p>Our goal is to half incarceration in Wisconsin</p>
+            </div>
         );
     }
 }
